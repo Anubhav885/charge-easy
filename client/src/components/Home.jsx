@@ -1,4 +1,5 @@
 import { Box, Button, styled, Typography } from '@mui/material'
+import AddStation from './AddStation';
 
 import Header from "./Header";
 import HomeSection from "./HomeSection";
@@ -13,10 +14,13 @@ const MainContainer = styled(Box)`
 
 const Home = () => {
     return (
-        <MainContainer>
-            <Header />
-            <HomeSection/>
-        </MainContainer>
+        <>
+            <MainContainer>
+                <Header />
+                <HomeSection />
+            </MainContainer>
+            <AddStation/>
+        </>
     )
 }
 
